@@ -25,25 +25,3 @@ stack<int> pushAtBottom(stack<int>& myStack, int x)
     return myStack;
 }
 
-
-    int main()
-{
-    // Input
-    stack<int> S;
-    S.push(5);
-    S.push(4);
-    S.push(3);
-    S.push(2);
-    S.push(1);
-
-    int N = 7;
-    pushAtBottom(S, N);
-     while (!S.empty())
-    {
-        int p=S.top();
-        S.pop();
-        cout << p << " ";
-    }
-    return 0;
-
-}
